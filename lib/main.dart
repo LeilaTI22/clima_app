@@ -13,9 +13,6 @@ Future<void> main() async {
     print(" No se pudo cargar el .env, usando valor por defecto");
   }
 
-  
-  dotenv.env.putIfAbsent('OWM_API_KEY', () => 'db6592ace0abf8b024ebf8ebe49a1f76');
-
   print(" API Key en memoria: ${dotenv.env['OWM_API_KEY']}");
 
   runApp(const MyApp());
